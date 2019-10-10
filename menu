@@ -1,0 +1,72 @@
+echo -e "\033[40m\033[;36m                  ___           ___                     ___                                                                     ___                   \033[0m";
+echo -e " \033[40m\033[;36m    ___          /__/\         /  /\      ___          /__/\        ___           ___         ___                  ___         /  /\                  \033[0m";
+echo -e "\033[40m\033[;36m   /  /\         \  \:\       /  /:/_    /  /\         \  \:\      /  /\         /  /\       /__/|                /__/\       /  /::\                 \033[0m";
+echo -e "\033[40m\033[;36m  /  /:/          \  \:\     /  /:/ /\  /  /:/          \  \:\    /  /:/        /  /:/      |  |:|                \  \:\     /  /:/\:\    ___     ___ \033[0m";
+echo -e "\033[40m\033[;36m /__/::\      _____\__\:\   /  /:/ /:/ /__/::\      _____\__\:\  /__/::\       /  /:/       |  |:|                 \  \:\   /  /:/~/::\  /__/\   /  /\ \033[0m";
+echo -e "\033[40m\033[;36m \__\/\:\__  /__/::::::::\ /__/:/ /:/  \__\/\:\__  /__/::::::::\ \__\/\:\__   /  /::\     __|__|:|             ___  \__\:\ /__/:/ /:/\:\ \  \:\ /  /:/ \033[0m";
+echo -e "\033[40m\033[;36m    \  \:\/\ \  \:\~~\~~\/ \  \:\/:/      \  \:\/\ \  \:\~~\~~\/    \  \:\/\ /__/:/\:\   /__/::::\            /__/\ |  |:| \  \:\/:/__\/  \  \:\  /:/ \033[0m";
+echo -e "\033[40m\033[;36m     \__\::/  \  \:\  ~~~   \  \::/        \__\::/  \  \:\  ~~~      \__\::/ \__\/  \:\     ~\~~\:\           \  \:\|  |:|  \  \::/        \  \:\/:/  \033[0m";
+echo -e "\033[40m\033[;36m     /__/:/    \  \:\        \  \:\        /__/:/    \  \:\          /__/:/       \  \:\      \  \:\           \  \:\__|:|   \  \:\         \  \::/   \033[0m";
+echo -e "\033[40m\033[;36m     \__\/      \  \:\        \  \:\       \__\/      \  \:\         \__\/         \__\/       \__\/            \__\::::/     \  \:\         \__\/    \033[0m";
+echo -e "\033[40m\033[;36m                 \__\/         \__\/                   \__\/                                                        ~~~~       \__\/                  \033[0m";       
+menu="\nBienvenido, por favor digite un numero del 1 al 18 según el scrip que desee ejecutar \n
+1)Hola Mundo \n
+4)Arrays\n
+5)Arrays Otros usos\n
+6)Operaciones Aritméticas\n
+7)Operaciones Lógicas\n
+8)Condicionales\n
+9)Comprobaciones\n
+10)Case\n
+11)For\n
+12)While\n
+13)Untill\n
+14)Select\n
+15)Funciones\n
+16)Librerias\n
+17)Señales\n
+18)Colores\n
+19)¿Quieres ver un dibujo?\n
+20)¿Quieres jugar un juego?\n
+Para salir digite bye\n";
+pause(){
+  read -p "Press [Enter] key to continue..." fackEnterKey
+
+}
+read_options(){
+        local choice
+        read -p "Enter choice [ 1 - 18 or bye for exit] " choice
+        case $choice in
+                1)/home/valeg/scrips/./hola_mundo.sh ;;
+                2)/home/valeg/scrips/./hola_mundov.sh ;;
+                3)/home/valeg/scrips/./3_Variables.sh ;;
+                4)/home/valeg/scrips/./arrays.sh ;;
+                5)/home/valeg/scrips/./arrayso.sh ;;
+                6)/home/valeg/scrips/./oparitm.sh ;;
+                7)/home/valeg/scrips/./oplogic.sh ;;
+                8)/home/valeg/scrips/./condicionales.sh ;;
+                9)/home/valeg/scrips/./comprobar.sh ;;
+                10)/home/valeg/scrips/./caser.sh ;;
+                11)/home/valeg/scrips/./fore.sh ;;
+                12)/home/valeg/scrips/./whiles.sh ;;
+                13)/home/valeg/scrips/./untilll.sh ;;
+                14)/home/valeg/scrips/./selectt.sh ;;
+                15)/home/valeg/scrips/./func.sh ;;
+                16)/home/valeg/scrips/./librerias.sh ;;
+                17)/home/valeg/scrips/./señales.sh ;;
+                18)/home/valeg/scrips/./18_Colores.sh ;;
+                19)/home/valeg/scrips/./dibujo.sh ;;
+                20)/home/valeg/scrips/./juego.sh ;;
+                "bye")exit 0;;
+                *) echo -e "${RED}Error...${STD}" && sleep 1
+
+        esac
+}
+
+while true
+do
+
+        echo -e $menu
+        read_options
+done
+                                                                                                                      3,16     Comienzo
